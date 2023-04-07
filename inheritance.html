@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //   class fruits{
+        //     ties/method
+        // }
+        // class vege extends fruits{
+        //     properties/method
+        // }
+        class fruits {
+            constructor() {
+                console.log("fruit:mango");
+            }
+        }
+        class vegetable extends fruits {
+            constructor() {
+                super();
+                console.log("fruit:vegetable");
+            }
+        }
+        class veg extends vegetable {
+            constructor(uname) {
+                super();
+                console.log("fruit:vegetable" + " " + uname);
+            }
+        }
+        let a = new veg("rahul");
+
+
+        // pubalik parvet protetik
+
+
+    </script>
+</body>
+
+</html>

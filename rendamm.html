@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+    <link rel="stylesheet" href="rendam.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- <form action="">
+            <input id="inp" type="text" placeholder="Eanter a name">
+            <button id="add" type="submit">Add Name</button>
+            <button id="print" type="submit"> Print Randomized Name</button>
+        </form> -->
+
+        <p class="question"></p>
+        <p class="timer"></p>
+        <div id="over">quiz over</div>
+    </div>
+
+    <!-- <script>
+
+let output = []
+let text = document.getElementById("inp");
+let btn = document.getElementById("add");
+let random = document.getElementById("print");
+
+let res = []
+
+btn.onclick = (e)=>{
+
+    e.preventDefault()
+    let values = text.value
+     
+     output.push(values)
+     
+     console.log(output);
+     
+}
+
+random.onclick = (y) =>{
+    y.preventDefault()
+
+    let res = Math.floor(Math.random()*output.values)
+    console.log(res);
+
+}
+
+
+
+
+
+
+
+
+
+    </script> -->
+
+
+
+    <!-- 
+
+  print  = document.query
+
+ -->
+
+
+    <!-- <script>
+const print  = document.querySelector(#print);
+const already = [];
+const para = document.querySelector('p');
+
+
+form.onsubmit = (e) => {
+    a.preventDefault();
+    name.Value = ""
+    input.focus()
+    console.log(name);
+
+};
+
+print.onclick = () =>{
+
+}
+
+ </script> -->
+
+
+
+    <script>
+        const question = [
+            {
+                question: "2+2",
+            },
+            {
+                question: "2+3",
+            },
+            {
+                question: "2+4",
+            },
+            {
+                question: "2+5",
+            },
+            {
+                question: "2+6",
+            }, {
+                question: "2+7",
+            },
+        ]
+
+        let over = document.querySelector("#over")
+
+        const timerDiv = document.querySelector(".timer")
+        const questionDiv = document.querySelector(".question")
+        let timer = 5
+        let questionCount = 0
+
+        timerDiv.innerHTML = timer;
+        questionDiv.innerHTML = question[questionCount++].question;
+
+
+        setInterval(() => {
+            if (timer === 0) {
+                timer = 5;
+                timerDiv.innerHTML = timer;
+
+                //  when  timer 
+                if (questionCount === question.length) {
+                    clearInterval()
+                    timerDiv.style.display = "none"
+                    questionDiv.style.display = "none"
+                    over.style.display = "block"
+                }
+                questionDiv.innerHTML = question[questionCount++].question;
+            }
+            else
+                timerDiv.innerHTML = --timer;
+        }, 1000)
+
+        btn1.onclick=()=>{
+            for (let i = 0; i < input.value; i++)
+            para.innerHTML+=names[getARandomVAlue()]+",";
+        }
+
+
+        function getARandomVAlue() {
+            let ran = Math.floor(Math.random() * names.length);
+            if (already.includes(ran)) {
+                return getARandomVAlue();
+            }
+            else {
+                already.push(ran)
+                return ran;
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
